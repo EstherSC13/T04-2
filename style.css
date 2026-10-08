@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #1e2836;
+  border-bottom: 3px solid #f39c12;
+}
+
+footer {
+  border-bottom: none;
+  border-top: 3px solid #f39c12;
+  margin-top: auto;
+  color: #ffffff;
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+  color: #f39c12;
+}
+
+.nav-btn.active {
+  background-color: #f39c12;
+  color: #1e2836;
+}
+.nav-links a.active {
+  background-color: #f39c12;
+  color: #1e2836;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 30px auto;
+  flex: 1;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 25px 0 15px 0;
+  color: #000000;
+}
+
+.intro-text {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #333333;
+}
+
+.content-card {
+  background-color: #fdfbf2;
+  border: 1px solid #f2edd9;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+}
+
+.content-card h2 {
+  margin-top: 0;
+}
+
+.content-card ul {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-card li {
+  margin-bottom: 8px;
+}
+
+.placeholder-note {
+  margin-top: 15px;
+}
+
+.charts-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.chart-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chart-item img {
+  max-width: 100%;
+  height: auto;
+  margin: 12px 0;
+  display: block;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

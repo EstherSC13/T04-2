@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Data Visualization" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="105802939" />
+  <title>Televisions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="PowerIcon.png" alt="Power Logo" class="logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-btn">Home</a></li>
+        <li><a href="televisions.html" class="nav-btn active">Televisions</a></li>
+        <li><a href="about.html" class="nav-btn">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Television Energy Tips</h1>
+
+    <div class="content-card">
+      <p><strong>Size & technology matter.</strong> Larger screens and older tech (e.g., plasma) use more energy. Modern LED/LCD and OLED sets are generally more efficient.</p>
+      <ul>
+        <li>Use the TV's Energy Saver or Eco mode and reduce brightness where comfortable.</li>
+        <li>Disable “always-listening” voice features if you don't use them; they can add standby draw.</li>
+        <li>Consider star rating and annual kWh on the energy label when purchasing.</li>
+      </ul>
+      <p class="placeholder-note"><em>Placeholder note: Insert simple examples of annual kWh for common TV sizes in Australia to make this page concrete.</em></p>
+    </div>
+
+    <h2>TV Energy Insights: Data Story</h2>
+    <p class="intro-text">This section presents findings from the Australian Government's Television Energy Rating dataset. The aim is to help Australian consumers make informed decisions about technology, size, brand, and efficiency.</p>
+
+    <div class="charts-section">
+      <div class="chart-item">
+        <h3>1. What type of TV screen technologies are currently available in Australia and which are the most frequent?</h3>
+        <img src="Q1Bar_Chart.png" alt="Bar Chart - Screen Technologies Frequency">
+        <p class="chart-insight">Most TVs in Australia are LCD, while LED and OLED are less common.</p>
+      </div>
+
+      <div class="chart-item">
+        <h3>2. What screen sizes are available and which are most frequent?</h3>
+        <img src="Q2Bar_Chart.png" alt="Bar Chart - Screen Sizes Frequency">
+        <p class="chart-insight">65-inch TVs are the most common, followed by mid-range sizes like 55-85 inches.</p>
+      </div>
+
+      <div class="chart-item">
+        <h3>3. Which brands have the largest number of models?</h3>
+        <img src="Q3Bar_Chart.png" alt="Bar Chart - Brand Distribution">
+        <p class="chart-insight">Samsung, LG, and Kogan have the largest number of models on the Australian market.</p>
+      </div>
+
+      <div class="chart-item">
+        <h3>4. Which type of screen technology consumes the least amount of power?</h3>
+        <img src="Q4Bar_Chart.png" alt="Bar Chart - Power Consumption by Technology">
+        <p class="chart-insight">LCD TVs consume the least power, while OLEDs use slightly more but offer higher performance.</p>
+      </div>
+
+      <div class="chart-item">
+        <h3>5. What is the relationship between screen size and power use?</h3>
+        <img src="Q5Scatter_Plot.png" alt="Scatter Plot - Size vs Power Use">
+        <p class="chart-insight">The larger the TV size, the higher the use of power. The relationship is clearly positive.</p>
+      </div>
+
+      <div class="chart-item">
+        <h3>6. What is the relationship between star rating and screen size?</h3>
+        <img src="Q6Scatter_Plot.png" alt="Scatter Plot - Size vs Star Rating">
+        <p class="chart-insight">Star ratings are fairly distributed across all sizes; bigger TVs can still be efficient if well designed.</p>
+      </div>
+    </div>
+
+    <div class="conclusion-box">
+      <h2>Conclusion</h2>
+      <p>When choosing a TV, balancing size, brand, and efficiency is key. A 65-inch LED TV is common and energy-smart for most households.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="year">2026</span> Esther Ee Jie NG</p>
+      <p>Built with assistance from GenAI for starter code/content</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
