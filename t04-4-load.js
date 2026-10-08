@@ -10,6 +10,3 @@ d3.csv("data/tvBrandCount.csv", d => ({
     data.sort((a, b) => d3.descending(a.count, b.count));
     createBarChart(data);
 });
-function createBarChart(data) {
-    console.log("createBarChart received", data.length, "rows");
-}
