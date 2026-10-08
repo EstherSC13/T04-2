@@ -175,3 +175,8 @@ h2 {
     text-align: center;
   }
 }
+.responsive-svg-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
